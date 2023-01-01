@@ -1,6 +1,8 @@
 # buddylink
 
-A new Flutter project.
+Welcome to BuddyLink - a comprehensive and intuitive mobile app designed to help you keep track of your friends and their important upcoming events. With BuddyLink, you can easily store and organize information about your friends, including their contact information, important dates, and topics you've discussed.
+
+Our user-friendly interface allows you to easily navigate between different friends and view their information in an organized manner. Plus, you can even add notes and reminders to help you stay on top of important events and conversations.
 
 ## Getting Started
 
