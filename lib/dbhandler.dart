@@ -25,18 +25,18 @@ class DBHandlerService {
     });
   }
 
-  Future createAppointment1(String serviceproviderId, String customerId,
-      String customerName, String date, String time, String description) async {
-    return await serviceProviderCollection
-        .doc(serviceproviderId)
-        .collection("termine")
+  Future createNewContact(String firstname, String lastname, String reason,
+      String birthday, String location) async {
+    return await userCollection
+        .doc(AuthService().user!.uid)
+        .collection("contacts")
         .add({
-      'customer-id': customerId,
-      'Datum': date,
-      'Zeit': time,
-      'Kunde': customerName,
-      'Beschreibung': description,
-      'isdone': false,
+      'firstname': firstname,
+      'lastname': lastname,
+      'reason': reason,
+      'birthday': birthday,
+      'location': location,
+      'added_on': DateTime.now().millisecondsSinceEpoch,
     });
   }
 
